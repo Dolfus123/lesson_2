@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include<Windows.h>
 
 using namespace std;
@@ -10,12 +10,12 @@ private:
 public:
 	Item(string name) {
 		this->name = name;
-		cout << "работает конструктор с параметрами item" << endl;
+		cout << "СЂР°Р±РѕС‚Р°РµС‚ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё item" << endl;
 	}
 
 	Item() {
 		this->name = "";
-		cout << "работает конструктор без параметров item" << endl;
+		cout << "СЂР°Р±РѕС‚Р°РµС‚ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚СЂРѕРІ item" << endl;
 	}
 
 	void setName(string name) {
@@ -28,12 +28,12 @@ public:
 	}
 
 	void infoItem() {
-		cout << "Название: " << this->getName()  << endl;
+		cout << "РќР°Р·РІР°РЅРёРµ: " << this->getName()  << endl;
 	}
 
 	
 	~Item() {
-		cout << "работает диструктор item" << endl;
+		cout << "СЂР°Р±РѕС‚Р°РµС‚ РґРёСЃС‚СЂСѓРєС‚РѕСЂ item" << endl;
 	}
 };
 class Milk : public Item {
@@ -42,12 +42,12 @@ private:
 public:
 	Milk(string name, double price) :Item(name) {
 		this->price = price;
-		cout << "работает конструктор с параметрами milk" << endl;
+		cout << "СЂР°Р±РѕС‚Р°РµС‚ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё milk" << endl;
 	}
 	
 	Milk() :Item() {
 		this->price = 0;
-		cout << "работает конструктор без параметрами milk" << endl;
+		cout << "СЂР°Р±РѕС‚Р°РµС‚ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚СЂР°РјРё milk" << endl;
 	}
 	void setPrice(double price) {
 		this->price = price;
@@ -57,11 +57,11 @@ public:
 		return this->price;
 	}
 	void infoMilk() {
-		cout << "Название: " << this->getName() << ", цена: " << this->price << endl;
+		cout << "РќР°Р·РІР°РЅРёРµ: " << this->getName() << ", С†РµРЅР°: " << this->price << endl;
 	}
 
 	~Milk() {
-		cout << "работает диструктор milk" << endl;
+		cout << "СЂР°Р±РѕС‚Р°РµС‚ РґРёСЃС‚СЂСѓРєС‚РѕСЂ milk" << endl;
 	}
 };
 
@@ -71,12 +71,12 @@ private:
 public:
 	Yogurt(string name, int fatness) :Item(name) {
 		this->fatness = fatness;
-		cout << "работает конструктор с параметрами Yogurt" << endl;
+		cout << "СЂР°Р±РѕС‚Р°РµС‚ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё Yogurt" << endl;
 	}
 
 	Yogurt() :Item() {
 		this->fatness = 0;
-		cout << "работает конструктор без параметрами Yogurt" << endl;
+		cout << "СЂР°Р±РѕС‚Р°РµС‚ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚СЂР°РјРё Yogurt" << endl;
 	}
 	void setFatness(int fatness) {
 		this->fatness = fatness;
@@ -86,11 +86,11 @@ public:
 		return this->fatness;
 	}
 	void infoYogurt() {
-		cout << "Название: " << this->getName() << ", Жирность: " << this->fatness <<"%"<< endl;
+		cout << "РќР°Р·РІР°РЅРёРµ: " << this->getName() << ", Р–РёСЂРЅРѕСЃС‚СЊ: " << this->fatness <<"%"<< endl;
 	}
 
 	~Yogurt() {
-		cout << "работает диструктор Yogurt" << endl;
+		cout << "СЂР°Р±РѕС‚Р°РµС‚ РґРёСЃС‚СЂСѓРєС‚РѕСЂ Yogurt" << endl;
 	}
 };
 
@@ -100,12 +100,12 @@ private:
 public:
 	MilkArm(string name, double prise, string nameArm) :Milk(name, prise) {
 		this->nameArm = nameArm;
-		cout << "работает конструктор с параметрами MilkArm" << endl;
+		cout << "СЂР°Р±РѕС‚Р°РµС‚ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё MilkArm" << endl;
 	}
 
 	MilkArm() :Milk() {
-		this->nameArm = "Без арома";
-		cout << "работает конструктор без параметрами MilkArm" << endl;
+		this->nameArm = "Р‘РµР· Р°СЂРѕРјР°";
+		cout << "СЂР°Р±РѕС‚Р°РµС‚ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚СЂР°РјРё MilkArm" << endl;
 	}
 	void setNameArm(double salary) {
 		this->nameArm = nameArm;
@@ -116,11 +116,11 @@ public:
 		return this->nameArm;
 	}
 	void infoMilkArm() {
-		cout << "Название: " << this->getName() << ", цена: " << this->getPrice() << ", Арома: " << this->nameArm << endl;
+		cout << "РќР°Р·РІР°РЅРёРµ: " << this->getName() << ", С†РµРЅР°: " << this->getPrice() << ", РђСЂРѕРјР°: " << this->nameArm << endl;
 	}
 
 	~MilkArm() {
-		cout << "работает диструктор MilkArm" << endl;
+		cout << "СЂР°Р±РѕС‚Р°РµС‚ РґРёСЃС‚СЂСѓРєС‚РѕСЂ MilkArm" << endl;
 	}
 };
 
@@ -128,25 +128,25 @@ public:
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
-	Item* i1 = new Item("Молоко");
+	Item* i1 = new Item("РњРѕР»РѕРєРѕ");
 	i1->infoItem();
 	delete i1; i1 = NULL;
 
 	cout << "-----------------------------" << endl;
 
-	Milk* m1 = new Milk("молоко", 2.5);
+	Milk* m1 = new Milk("РјРѕР»РѕРєРѕ", 2.5);
 	m1->infoMilk();
 	delete m1; m1 = NULL;
 
 	cout << "-----------------------------" << endl;
 
-	MilkArm* ma1 = new MilkArm("молоко", 2.5, "клубника");
+	MilkArm* ma1 = new MilkArm("РјРѕР»РѕРєРѕ", 2.5, "РєР»СѓР±РЅРёРєР°");
 	ma1->infoMilkArm();
 	delete ma1; ma1 = NULL;
 
 	cout << "-----------------------------" << endl;
 
-	Yogurt* y1 = new Yogurt("молоко", 2);
+	Yogurt* y1 = new Yogurt("РјРѕР»РѕРєРѕ", 2);
 	y1->infoYogurt();
 	delete y1; y1 = NULL;
 

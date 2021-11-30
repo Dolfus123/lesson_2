@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include<Windows.h>
 
 using namespace std;
@@ -11,13 +11,13 @@ public:
 	Human(string name, int age) {
 		this->name = name;
 		this->age = age;
-		cout << "ðàáîòàåò êîíñòðóêòîð ñ ïàðàìåòðàìè Human" << endl;
+		cout << "Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚ ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼Ð¸ Human" << endl;
 	}
 
 	Human() {
 		this->name = "";
 		this->age = 0;
-		cout << "ðàáîòàåò êîíñòðóêòîð áåç ïàðàìåòðîâ Human" << endl;
+		cout << "Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚ ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð±ÐµÐ· Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð² Human" << endl;
 	}
 
 	void setName(string name) {
@@ -38,11 +38,11 @@ public:
 	}
 
 	void infoHuman() {
-		cout << "Èìÿ: " << this->name << ", âîçðàñò: " << this->age << endl;
+		cout << "Ð˜Ð¼Ñ: " << this->name << ", Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚: " << this->age << endl;
 	}
 
 	~Human() {
-		cout << "ðàáîòàåò äèñòðóêòîð Human" << endl;
+		cout << "Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚ Ð´Ð¸ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Human" << endl;
 	}
 };
 class Student : public Human {
@@ -51,15 +51,15 @@ private:
 public:
 	Student(string name, int age, double salary):Human (name,age) {
 		this->salary = salary;
-		cout << "ðàáîòàåò êîíñòðóêòîð ñ ïàðàìåòðàìè Worcker(3)" << endl;
+		cout << "Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚ ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼Ð¸ Worcker(3)" << endl;
 	}
 	Student(string name, int age) : Human(name, age) {
 		this->salary = 0;
-		cout << "ðàáîòàåò êîíñòðóêòîð ñ ïàðàìåòðàìè Worcker(2)" << endl;
+		cout << "Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚ ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼Ð¸ Worcker(2)" << endl;
 	}
 	Student() :Human() {
 		this->salary = 0;
-		cout << "ðàáîòàåò êîíñòðóêòîð áåç ïàðàìåòðàìè Worcker" << endl;
+		cout << "Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚ ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð±ÐµÐ· Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼Ð¸ Worcker" << endl;
 	}
 	void setSalary(double salary) {
 		this->salary = salary;
@@ -69,11 +69,11 @@ public:
 		return this->salary;
 	}
 	void infoWorker() {
-		cout << "Èìÿ: " << this->getName() << ", âîçðàñò: " << this->getAge() << ", çàðïëàòà: " << this->salary << endl;
+		cout << "Ð˜Ð¼Ñ: " << this->getName() << ", Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚: " << this->getAge() << ", Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ð°: " << this->salary << endl;
 	}
 
 	~Student() {
-		cout << "ðàáîòàåò äèñòðóêòîð Worker" << endl;
+		cout << "Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚ Ð´Ð¸ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Worker" << endl;
 	}
 };
 
@@ -85,13 +85,13 @@ public:
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
-	Human* h1 = new Human("Ïåòð", 40);
+	Human* h1 = new Human("ÐŸÐµÑ‚Ñ€", 40);
 	h1->infoHuman();
 	delete h1; h1 = NULL;
 
 	cout << "-----------------------------" << endl;
 
-	Worker* w1 = new Worker("Èãîðü", 34, 500);
+	Worker* w1 = new Worker("Ð˜Ð³Ð¾Ñ€ÑŒ", 34, 500);
 	w1->infoWorker();
 	delete w1; w1 = NULL;
 
